@@ -1,0 +1,425 @@
+h1, h2, h3, h4, h5, button, .amiibo-name {
+  font-family: 'Bitter', serif;
+}
+#navbar {
+  z-index: 1;
+}
+#boletin {
+  padding: 10px;
+  color: #fff;
+  background: #b98e8e;
+  text-align: center;
+}
+#ribbon::after {
+  content: '';
+  background-color: transparent;
+  display: block;
+  height: 20px;
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+  left: auto;
+  margin-top: -40px;
+}
+#separator-ribbon {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+#separator-ribbon .content {
+  width: 150%;
+  height: 150px;
+  margin-left: -25%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+#birthday {
+  background-color: rgb(65, 54, 54);
+  position: relative;
+  margin-top: -20px;
+  z-index: 10;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+#birthday img {
+  position: relative;
+  margin-top: -30px;
+}
+#games {
+  background: rgb(255, 255, 255);
+  background-repeat: repeat-x;
+  background-size: 75%;
+  margin-top: -20px;
+}
+.card-border {
+  border: solid 10px white;
+  border-radius: 1px;
+  overflow: hidden;
+  transition: all ease-out 0.2s;
+}
+.card-border:hover {
+  transform: scale(1.05);
+}
+.text-shadow {
+  text-shadow: 0 3px 3px rgba(0, 0, 0, 0.6);
+}
+/* MARKETING CONTENT*/
+.marketing .col-lg-4 {
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: 400;
+}
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+/* Featurettes ------------------------- */
+.featurette-divider {
+  margin: 5rem 0;
+ /* Space out the Bootstrap <hr> more */
+}
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+#footer {
+  background-color: rgb(46, 45, 45);
+  background-size: 50px 50px;
+  color: white;
+  clear: both;
+  text-align: center;
+  padding: 10px;
+}
+/*estilos venta*/
+@import url("https://fonts.googleapis.com/css?family=Varela+Round");
+:root {
+  --color-1: #21d4fd;
+  --color-2: #b721ff;
+  --color-3: #08aeea;
+  --color-4: #2af598;
+}
+body {
+  font-family: 'Varela Round', sans-serif;
+}
+.Header {
+  position: relative;
+  height: 80vh;
+  display: block;
+}
+.Header-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(19deg, var(--color-1), var(--color-2));
+  transform-origin: 0px 0px;
+  transform: skewY(-10deg);
+  overflow: hidden;
+  z-index: -1;
+}
+.Header-background::before, .Header-background::after {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 80%;
+  height: 33.333333333333336%;
+  opacity: 0.3;
+  filter: blur(15px);
+}
+.Header-background::before {
+  background: var(--color-1);
+  right: 0;
+}
+.Header-background::after {
+  background: var(--color-2);
+  bottom: 0;
+}
+.Header-content {
+  text-align: center;
+  padding: 4rem 4rem;
+  margin: 0 auto;
+}
+@media (min-width: 58rem) {
+  .Header-content {
+      text-align: left;
+      padding: 10rem 4rem;
+      max-width: 54rem;
+      display: flex;
+      justify-content: space-between;
+ }
+}
+.Header-hero h1, .Header-hero p {
+  color: #fff;
+  text-shadow: 0 0.5rem 1rem rgba(50, 0, 100, 0.1);
+}
+.Header-hero h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+.Header-hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+.Header-visuals {
+  position: relative;
+  margin-top: 5rem;
+  transform: rotate(-10deg);
+}
+@media (min-width: 58rem) {
+  .Header-visuals {
+      margin: 0;
+      transform: translateY(-5rem) rotate(-10deg);
+ }
+}
+.Button {
+  padding: 1.5rem 2rem;
+  border: 0;
+  color: var(--color-3);
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: #fff;
+  border-radius: 3px;
+  transition: all 0.2s;
+  cursor: pointer;
+  box-shadow: 0 1.75rem 2rem -0.4rem rgba(50, 0, 100, 0.15);
+}
+.Button:hover {
+  color: var(--color-4);
+  box-shadow: 0 1.75rem 3rem 0rem rgba(50, 0, 100, 0.1);
+  transform: scale(1.05);
+}
+.Button:active {
+  box-shadow: 0 1.75rem 2.5rem -0.2rem rgba(50, 0, 100, 0.125);
+  transform: scale(1.025);
+}
+.Iphone {
+  display: inline-block;
+  background: #fff;
+  padding: 4rem 0.6rem 0;
+  border-radius: 2rem;
+  box-shadow: -1rem 1.75rem 2rem -0.4rem rgba(50, 0, 100, 0.1), -0.2rem 0.2rem 0.5rem rgba(50, 0, 100, 0.05), inset 0.5rem -0.5rem 0.5rem -0.4rem rgba(50, 0, 100, 0.1);
+  text-align: center;
+}
+.Iphone::before, .Iphone::after {
+  content: '';
+  display: block;
+}
+.Iphone::before {
+  background-color: var(--color-3);
+  background-image: linear-gradient(0deg, var(--color-3) 0%, var(--color-4) 100%);
+  width: 16rem;
+  padding-top: 177.5%;
+}
+.Iphone::after {
+  display: inline-block;
+  margin: -0.6rem;
+  padding: -1rem;
+  border: 1px solid #f1f1f1;
+  border-radius: 2rem;
+  box-shadow: inset -0.05rem 0.05rem 0.5rem 0rem rgba(50, 0, 100, 0.05);
+}
+/*animacion contacto*/
+@import "https://fonts.googleapis.com/css?family=Ubuntu:300, 400, 500, 700";
+*, *:after, *:before {
+  margin: 0;
+  padding: 0;
+}
+.svg-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+}
+svg path {
+  transition: 0.1s;
+}
+svg:hover path {
+  d: path ("M 800 300 Q 400 250 0 300 L 0 0 L 800 0 L 800 300 Z");
+}
+header {
+  color: #fff;
+  padding-top: 10vw;
+  padding-bottom: 30vw;
+  text-align: center;
+}
+main {
+  background: linear-gradient(to bottom, #ffffff 0%, #dddee1 100%);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10vh 0 80vh;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  max-width: 800px;
+  width: 90%;
+  margin: auto;
+  padding: 40px;
+}
+small {
+  opacity: 0.5;
+  font-weight: 300;
+}
+small a {
+  color: inherit;
+}
+.formulario {
+  display: block;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.formulario__label {
+  display: block;
+  font-weight: 700;
+  padding: 10px;
+  cursor: pointer;
+}
+.formulario__grupo-input {
+  position: relative;
+}
+.formulario__input {
+  width: 100%;
+  background: #fff;
+  border: 3px solid transparent;
+  border-radius: 3px;
+  height: 45px;
+  line-height: 45px;
+  padding: 0 40px 0 10px;
+  transition: .3s ease all;
+}
+.formulario__input:focus {
+  border: 3px solid #0075FF;
+  outline: none;
+  box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
+}
+.formulario__input-error {
+  font-size: 12px;
+  margin-bottom: 0;
+  display: none;
+}
+.formulario__input-error-activo {
+  display: block;
+}
+.formulario__validacion-estado {
+  position: absolute;
+  right: 10px;
+  bottom: 15px;
+  z-index: 100;
+  font-size: 16px;
+  opacity: 0;
+}
+.formulario__checkbox {
+  margin-right: 10px;
+}
+.formulario__grupo-terminos, .formulario__mensaje, .formulario__grupo-btn-enviar {
+  grid-column: span 2;
+}
+.formulario__mensaje {
+  height: 45px;
+  line-height: 45px;
+  background: #F66060;
+  padding: 0 15px;
+  border-radius: 3px;
+  display: none;
+}
+.formulario__mensaje-activo {
+  display: block;
+}
+.formulario__mensaje p {
+  margin: 0;
+}
+.formulario__grupo-btn-enviar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.formulario__btn {
+  height: 45px;
+  line-height: 45px;
+  width: 30%;
+  background: #008080;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: .1s ease all;
+}
+.formulario__btn:hover {
+  box-shadow: 3px 0px 30px rgba(163, 163, 163, 1);
+}
+.formulario__mensaje-exito {
+  font-size: 14px;
+  color: #119200;
+  display: none;
+}
+.formulario__mensaje-exito-activo {
+  display: block;
+}
+.contacto{
+  text-align: center;
+  align-items: center;
+  margin: auto;
+}
+.map-responsive {
+  overflow:hidden;
+  padding-bottom:400px; /*Reduce este valor si el mapa fuera muy alto, por ejemplo 250px, puedes usar porcentajes, 50%*/
+  position:relative;
+  height:0;
+}
+.map-responsive iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+/* ----- ----- Estilos para Validacion ----- ----- */
+.formulario__grupo-correcto .formulario__validacion-estado {
+  color: #1ed12d;
+  opacity: 1;
+}
+.formulario__grupo-incorrecto .formulario__label {
+  color: #bb2929;
+}
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+  color: #bb2929;
+  opacity: 1;
+}
+.formulario__grupo-incorrecto .formulario__input {
+  border: 3px solid #bb2929;
+}
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #03afff;
+  border-radius: 4px;
+  transition: transform 0.3s ease-in-out;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.grid-item:hover {
+  filter: opacity(0.9);
+  transform: scale(1.04);
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+  gap: 20px;
+  padding: 20px;
+  grid-auto-flow: dense;
+}
+@media (min-width: 600px) {
+  .wide {
+      grid-column: span 2;
+ }
+  .tall {
+      grid-row: span 2;
+ }
+}
